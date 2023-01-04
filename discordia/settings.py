@@ -58,6 +58,10 @@ CORS_ALLOWED_ORIGINS = [
 "http://localhost:3000",
 ]
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+
 CORS_ALLOW_METHODS = [
 'DELETE',
 'GET',
