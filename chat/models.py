@@ -6,7 +6,7 @@ from django.db import models
 class Server(models.Model):
     name = models.CharField(max_length=21, unique=True)
     description = models.CharField(max_length=100, blank=True)
-    server_image = models.ImageField(upload_to='media', blank=True)
+    server_image = models.ImageField(upload_to='media')
 
 
 class Channel(models.Model):
