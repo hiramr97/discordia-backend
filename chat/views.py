@@ -1,6 +1,6 @@
-from .models import Server, Channel
+from .models import Server, Channel, Message
 from rest_framework import viewsets
-from .serializers import ServerSerializer, ChannelSerializer
+from .serializers import ServerSerializer, ChannelSerializer, MessageSerializer
 
 
 class ServerViewSet(viewsets.ModelViewSet):
@@ -11,3 +11,7 @@ class ServerViewSet(viewsets.ModelViewSet):
 class ChannelViewSet(viewsets.ModelViewSet):
     queryset = Channel.objects.all()
     serializer_class = ChannelSerializer
+
+class MessageViewSet(viewsets.ModelViewSet):
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer

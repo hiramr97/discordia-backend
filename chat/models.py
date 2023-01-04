@@ -16,7 +16,7 @@ class Channel(models.Model):
     description = models.CharField(max_length=100, blank=True)
 
 
-class Messages(models.Model):
+class Message(models.Model):
     channel = models.ForeignKey(
         Channel, on_delete=models.CASCADE, related_name="messages")
     user = models.CharField(max_length=21)
