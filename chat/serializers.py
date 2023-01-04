@@ -1,5 +1,7 @@
 from rest_framework import serializers
-from .models import Server, Channel
+from .models import Server, Channel, Messages
+
+class 
 
 class ChannelSerializer(serializers.ModelSerializer):
     class Meta:
