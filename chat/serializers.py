@@ -3,12 +3,13 @@ from .models import Server, Channel, Message
 
 class MessageSerializer(serializers.ModelSerializer):
     class Meta:
+        model = Message
         fields = '__all__'
 
 class ChannelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Channel
-        fields = '__all__'
+        fields = ('id', 'name', 'description', 'server', 'messages')
     messages = MessageSerializer(
         many=True,
         required = False
@@ -17,7 +18,7 @@ class ChannelSerializer(serializers.ModelSerializer):
 class ServerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Server
-        fields = '__all__'
+        fields = ('id', 'name', 'description', 'server_image', 'channels')
 
     channels = ChannelSerializer(
         many=True,
