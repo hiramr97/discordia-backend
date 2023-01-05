@@ -61,6 +61,7 @@ CORS_ALLOWED_ORIGINS = [
 BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_ROOT = ''
 MEDIA_URL = ''
+STATIC_URL = '/static/'
 
 CORS_ALLOW_METHODS = [
 'DELETE',
