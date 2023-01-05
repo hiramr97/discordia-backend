@@ -9,6 +9,7 @@ djangorestframework = "*"
 psycopg2-binary = "*"
 pillow = "*"
 django-cors-headers = "*"
+python-decouple = "*"
 
 [dev-packages]
 autopep8 = "*"
