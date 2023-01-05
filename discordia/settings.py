@@ -57,7 +57,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
 "http://localhost:3000",
-"https://discordia-l2f800uib-hiramr97.vercel.app"
+"https://discordia-l2f800uib-hiramr97.vercel.app",
+"discordia.herokuapp.com"
 ]
 
 BASE_DIR = Path(__file__).resolve().parent.parent
