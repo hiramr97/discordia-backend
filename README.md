@@ -1,4 +1,4 @@
-# Discordia - Chatting App (Front-End)
+# Discordia - Chatting App (Back-End)
 ## Project Overview
 
 This is a chatting app that allows you to make a profile with a profile photo and name. You can create your own channels and servers to chat about whatever you'd like!
