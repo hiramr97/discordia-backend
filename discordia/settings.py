@@ -44,6 +44,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -56,22 +58,21 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-"http://localhost:3000",
-"https://discordia-l2f800uib-hiramr97.vercel.app",
+    "http://localhost:3000",
+    "https://discordia-l2f800uib-hiramr97.vercel.app",
 ]
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_ROOT = ''
 MEDIA_URL = ''
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CORS_ALLOW_METHODS = [
-'DELETE',
-'GET',
-'OPTIONS',
-'PATCH',
-'POST',
-'PUT',
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
 ]
 
 ROOT_URLCONF = 'discordia.urls'
@@ -104,7 +105,7 @@ DATABASES = {
         'USER': 'dfmalhyzdaohhd',
         'PASSWORD': '55c91939cc7197d214fd8735830156f0b3577fa4b8e57093661951e9474d27b0',
         'HOST': 'ec2-52-54-212-232.compute-1.amazonaws.com',
-        'PORT':5432
+        'PORT': 5432
     }
 }
 
@@ -143,7 +144,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
