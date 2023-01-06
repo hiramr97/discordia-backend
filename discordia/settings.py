@@ -26,7 +26,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['discordia.herokuapp.com']
+ALLOWED_HOSTS = ['discordia.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -94,6 +94,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'discordia.wsgi.application'
 
+postgres://dfmalhyzdaohhd:55c91939cc7197d214fd8735830156f0b3577fa4b8e57093661951e9474d27b0@ec2-52-54-212-232.compute-1.amazonaws.com:5432/d6540j9s6iocds
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
@@ -101,10 +102,11 @@ WSGI_APPLICATION = 'discordia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'chat',
-        'USER': 'chatuser',
-        'PASSWORD': 'chat',
-        'HOST': 'localhost'
+        'NAME': 'd6540j9s6iocds',
+        'USER': 'dfmalhyzdaohhd',
+        'PASSWORD': '55c91939cc7197d214fd8735830156f0b3577fa4b8e57093661951e9474d27b0',
+        'HOST': 'ec2-52-54-212-232.compute-1.amazonaws.com',
+        'PORT':5432
     }
 }
 
