@@ -26,7 +26,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['discordia.herokuapp.com']
 
 
 # Application definition
@@ -58,7 +58,6 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
 "http://localhost:3000",
 "https://discordia-l2f800uib-hiramr97.vercel.app",
-"discordia.herokuapp.com"
 ]
 
 BASE_DIR = Path(__file__).resolve().parent.parent
