@@ -12,6 +12,8 @@ django-cors-headers = "*"
 python-decouple = "*"
 gunicorn = "*"
 whitenoise = "*"
+boto3 = "*"
+django-storages = "*"
 
 [dev-packages]
 autopep8 = "*"
