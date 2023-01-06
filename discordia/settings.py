@@ -94,8 +94,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'discordia.wsgi.application'
 
-postgres://dfmalhyzdaohhd:55c91939cc7197d214fd8735830156f0b3577fa4b8e57093661951e9474d27b0@ec2-52-54-212-232.compute-1.amazonaws.com:5432/d6540j9s6iocds
-
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
